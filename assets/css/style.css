@@ -11,10 +11,12 @@
 
 #myUL {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -10%);
   list-style-type: none;
+  min-width: 400px;
+  /* width: 400px; */
 }
 
 #myUL li a {

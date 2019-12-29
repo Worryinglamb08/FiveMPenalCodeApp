@@ -3,25 +3,21 @@ const url = require("url");
 const path = require("path");
 
 let mainWindow;
-
-function createWindow() {
-  // Create the browser window.
-  let win = new BrowserWindow({
-    width: 1000,
-    height: 800,
-    webPreferences: {
-      nodeIntegration: true
-    }
-  });
-  win.setTitle("Maritime Penal code App");
-  const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
-  Menu.setApplicationMenu(mainMenu);
-  win.loadFile("index.html");
-}
 const mainMenuTemplate = [
   {
     label: "File",
     submenu: [
+      {
+        label: "Home Page",
+        label: "Reload",
+        accelerator: "CmdOrCtrl+R",
+        click(item, focusedWindow) {
+          if (focusedWindow) focusedWindow.reload();
+        }
+      },
+      {
+        role: "togglefullscreen"
+      },
       {
         label: "Quit",
         accelerator: process.platform == "darwin" ? "Command+Q" : "Ctrl+Q",
@@ -34,7 +30,14 @@ const mainMenuTemplate = [
 ];
 
 app.on("ready", function() {
-  mainWindow = new BrowserWindow({});
+  mainWindow = new BrowserWindow({
+    width: 1000,
+    height: 1000,
+    webPreferences: {
+      nodeIntegration: true
+    }
+  });
+  mainWindow.setTitle("Maritime Penal code App");
   mainWindow.loadURL(
     url.format({
       pathname: path.join(__dirname, "index.html"),
