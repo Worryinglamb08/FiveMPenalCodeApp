@@ -37,6 +37,7 @@ app.on("ready", function() {
       nodeIntegration: true
     }
   });
+  // mainWindow.webContents.openDevTools();
   mainWindow.setTitle("Maritime Penal code App");
   mainWindow.loadURL(
     url.format({
