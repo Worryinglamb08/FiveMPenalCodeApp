@@ -5,7 +5,7 @@ const path = require("path");
 let mainWindow;
 const mainMenuTemplate = [
   {
-    label: "File",
+    label: "Options",
     submenu: [
       {
         label: "Home Page",
