@@ -1,7 +1,7 @@
 {
   "name": "maritime-penal-codes-app",
   "productName": "Maritime Penal code App",
-  "version": "1.1.0",
+  "version": "1.4.0",
   "description": "Maritime, An app to find penal codes.",
   "main": "main.js",
   "scripts": {
@@ -11,7 +11,15 @@
     "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE darwinDarkModeSupport=true --version-string.FileDescription=CE --version-string.ProductName=\"Maritime Penal Code App\"",
     "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dev-CasperTheGhost/MaritmePenalCodeApp.git"
+  },
+  "keywords": [
+    "Penal codes",
+    "Penal",
+    "codes"
+  ],
   "author": "Casper Iversen",
   "license": "ISC",
   "dependencies": {
