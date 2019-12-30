@@ -31,8 +31,8 @@ const mainMenuTemplate = [
 
 app.on("ready", function() {
   mainWindow = new BrowserWindow({
-    width: 1920,
-    height: 1080,
+    width: 1280,
+    height: 720,
     webPreferences: {
       nodeIntegration: true
     }

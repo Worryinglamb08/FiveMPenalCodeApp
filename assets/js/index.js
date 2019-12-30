@@ -13,4 +13,6 @@ function myFunction() {
       li[i].style.display = "none";
     }
   }
+  document.getElementById("container").style.position = "absolute";
+  document.getElementById("container").style.top = "50%";
 }
