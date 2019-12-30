@@ -14,5 +14,5 @@ function myFunction() {
     }
   }
   document.getElementById("container").style.position = "absolute";
-  document.getElementById("container").style.top = "50%";
+  document.getElementById("container").style.top = "30%";
 }
