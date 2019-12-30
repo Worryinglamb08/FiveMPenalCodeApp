@@ -10,6 +10,8 @@
     <script src="./main.js"></script>
   </head>
   <body>
+    <a id="settingsBtn" href="./p/setting.html">Settings</a>
+    <div id="welcomeThing"></div>
     <input
       type="text"
       id="searchBar"
@@ -176,6 +178,50 @@
       <li>
         <a href="./p/p-7/7.5.html">(7)05.Possession-Of-Child-Pornography</a>
       </li>
+      <!-- title 8 -->
+      <li><a href="./p/p-8/8.0.html">(8)00.Limitations</a></li>
+      <li>
+        <a href="./p/p-8/8.1.html">(8)01.-Driving-With-A-Suspended-License</a>
+      </li>
+      <li><a href="./p/p-8/8.2.html">(8)02.Driving-Without-A-License</a></li>
+      <li>
+        <a href="./p/p-8/8.3.html"
+          >(8)03.Evading-A-Peace-Officer-High-Performance-Vehicle</a
+        >
+      </li>
+      <li>
+        <a href="./p/p-8/8.4.html"
+          >(8)04.Evading-A-Peace-Officer-Oversized-Vehicle</a
+        >
+      </li>
+      <li>
+        <a href="./p/p-8/8.5.html"
+          >(8)05.Evading-A-Peace-Officer-Naval-Vessel</a
+        >
+      </li>
+      <li>
+        <a href="./p/p-8/8.6.html">(8)06.Evading-A-Peace-Officer-Aircraft</a>
+      </li>
+      <li>
+        <a href="./p/p-8/8.7.html">(8)07.Flying-Without-A-Pilot's-License</a>
+      </li>
+      <li><a href="./p/p-8/8.8.html">(8)08.Hit-And-Run</a></li>
+      <li>
+        <a href="./p/p-8/8.9.html"
+          >(8)09.Hit-And-Run-Involving-Property-Damage</a
+        >
+      </li>
     </ul>
+    <script>
+      var userNameInput = `Welcome, ${localStorage["objectToPass"]}`;
+
+      // if (userNameInput !== 9) {
+      //   document.getElementById("welcomeThing").textContent = "None";
+      // }
+
+      document.getElementById("welcomeThing").textContent = userNameInput;
+
+      // localStorage.removeItem("objectToPass"); // Clear the localStorage
+    </script>
   </body>
 </html>

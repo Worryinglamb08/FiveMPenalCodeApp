@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/index.js"></script>
+  </head>
+  <body>
+    <a href="../index.html" id="settingBack">Back</a>
+    <form action="./setting.html" id="usernameForm">
+      <h4 id="usernameFormheader">Username:</h4>
+      <input type="text" name="username" id="usernameInput" />
+      <button id="submitUsername" onclick="apply()">apply changes</button>
+    </form>
+    <h1 id="welcomeThing"></h1>
+    <script>
+      const UsernameInput = document.getElementById("usernameInput");
+
+      document
+        .getElementById("submitUsername")
+        .addEventListener("click", storeData);
+
+      UsernameInput.addEventListener("keypress", function(key) {
+        key.which = key.which || key.keyCode;
+        if (key.which == 13) {
+          storeData();
+        }
+      });
+
+      function storeData() {
+        localStorage.setItem("objectToPass", UsernameInput.value);
+        console.log("stored!");
+      }
+    </script>
+  </body>
+</html>
