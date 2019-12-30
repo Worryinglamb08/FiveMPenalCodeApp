@@ -42,6 +42,10 @@ body {
   padding: 7px;
   width: 250px;
   border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
 }
 #usernameForm {
   position: absolute;
@@ -67,12 +71,13 @@ body {
 #nothingFound {
   display: none;
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -30%);
   font-size: 20px;
   font-family: sans-serif;
   color: white;
+  z-index: 0;
 }
 
 #welcomeThing {
@@ -82,6 +87,11 @@ body {
   font-size: 30px;
   border: 2px transparent;
   width: 300px;
+}
+@media screen and (max-width: 1200px) {
+  #welcomeThing {
+    display: none;
+  }
 }
 
 #searchBar {
@@ -94,7 +104,7 @@ body {
   left: 50%;
   /* top: 5%; */
   transform: translate(-50%, -5%);
-  z-index: 1;
+  z-index: 2;
   text-align: center;
 }
 #myUL {
@@ -108,6 +118,7 @@ body {
 }
 
 #myUL li a {
+  z-index: 1;
   margin-left: -25px;
   border-radius: 10px;
   border: 1px solid #ddd;

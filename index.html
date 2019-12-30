@@ -352,18 +352,57 @@
           <a href="./p/p-11/11.22.html">(11)22.Broken-Headlights-Tail-lights</a>
         </li>
         <li><a href="./p/p-11/11.23.html">(11)23.Unregistered-Vehicle</a></li>
+        <!-- title 12 -->
+        <li><a href="./p/p-12/12.1.html">(12)01.Mistake-of-Fact</a></li>
+        <li>
+          <a href="./p/p-12/12.2.html">(12)02.Involuntary-Intoxication</a>
+        </li>
+        <li>
+          <a href="./p/p-12/12.3.html"
+            >(12)03.Private-Defense-Self-Defense-Castle-Doctrine-And-Defense-Of-Others</a
+          >
+        </li>
+        <li><a href="./p/p-12/12.4.html">(12)04.Necessity</a></li>
+        <li><a href="./p/p-12/12.5.html">(12)05. Entrapment</a></li>
+        <li><a href="./p/p-12/12.6.html">(12)06.Duress</a></li>
+        <li><a href="./p/p-12/12.7.html">(12)07.Parole-Exclusions</a></li>
+        <li><a href="./p/p-12/12.8.html">(12)08.Suspicion-Policy</a></li>
+        <li><a href="./p/p-12/12.9.html">(12)09.Officer-Discretion</a></li>
+        <li><a href="./p/p-12/12.10.html">(12)10.Good-Samaritan-Clause</a></li>
+        <li>
+          <a href="./p/p-12/12.11.html">
+            (12)11.Imprisonment-Punishment-Criteria</a
+          >
+        </li>
+        <li><a href="./p/p-12/12.12.html">(12)12.Maximum-Imprisonment</a></li>
+        <li>
+          <a href="./p/p-12/12.13.html"
+            >(12)13.Wiretapping-CCTV-Videotaping-Policy</a
+          >
+        </li>
+
+        <li>
+          <a href="./p/p-12/12.14.html"
+            >(12)14.Police-Exigency-Hot-Pursuit-Policy</a
+          >
+        </li>
+        <li>
+          <a href="./p/p-12/12.15.html"
+            >(12)15.Probable-Cause-Plain-View-Policy</a
+          >
+        </li>
+        <li><a href="./p/p-12/12.16.html">(12)16.Criminal-Fines</a></li>
+        <li><a href="./p/p-12/12.17.html">(12)17.Repeat-Offender-Clause</a></li>
+        <li><a href="./p/p-12/12.18.html">(12)18.Immunity</a></li>
       </ul>
       <h3 id="nothingFound">Sorry, I didn't find that penal code!</h3>
     </div>
 
     <script>
-      var userNameInput = `Welcome, ${localStorage["objectToPass"]}`;
-
-      // if (userNameInput !== 9) {
-      //   document.getElementById("welcomeThing").textContent = "None";
-      // }
-
-      document.getElementById("welcomeThing").textContent = userNameInput;
+      var userNameInput = localStorage["objectToPass"];
+      document.getElementById(
+        "welcomeThing"
+      ).textContent = `Welcome, ${userNameInput}`;
 
       // localStorage.removeItem("objectToPass"); // Clear the localStorage
     </script>
