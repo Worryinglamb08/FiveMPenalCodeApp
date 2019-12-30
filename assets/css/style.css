@@ -64,6 +64,17 @@ body {
   border-radius: 10px;
 }
 
+#nothingFound {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+}
+
 #welcomeThing {
   position: fixed;
   color: white;
@@ -86,18 +97,11 @@ body {
   z-index: 1;
   text-align: center;
 }
-#container {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -7%);
-}
-
 #myUL {
-  display: inline-block;
-  /* position: absolute;
+  margin-top: 100px;
+  position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%); */
+  transform: translate(-50%);
   min-width: 550px;
   max-width: 550px;
   list-style-type: none;
