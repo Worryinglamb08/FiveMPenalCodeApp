@@ -10,6 +10,8 @@
     <script src="./main.js"></script>
   </head>
   <body>
+    <a href="./p/rights.html" id="rightsBtn">Rights</a>
+    <a href="./p/10-codes.html" id="codesBtn">10 Codes</a>
     <a id="settingsBtn" href="./p/setting.html">Settings</a>
     <div id="welcomeThing"></div>
     <input
@@ -395,7 +397,6 @@
         <li><a href="./p/p-12/12.17.html">(12)17.Repeat-Offender-Clause</a></li>
         <li><a href="./p/p-12/12.18.html">(12)18.Immunity</a></li>
       </ul>
-      <h3 id="nothingFound">Sorry, I didn't find that penal code!</h3>
     </div>
 
     <script>
@@ -403,8 +404,6 @@
       document.getElementById(
         "welcomeThing"
       ).textContent = `Welcome, ${userNameInput}`;
-
-      // localStorage.removeItem("objectToPass"); // Clear the localStorage
     </script>
   </body>
 </html>

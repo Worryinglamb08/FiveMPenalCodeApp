@@ -31,6 +31,8 @@ const mainMenuTemplate = [
 
 app.on("ready", function() {
   mainWindow = new BrowserWindow({
+    minHeight: 720,
+    minWidth: 950,
     width: 1280,
     height: 720,
     webPreferences: {

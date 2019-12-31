@@ -77,7 +77,7 @@ body {
   font-size: 20px;
   font-family: sans-serif;
   color: white;
-  z-index: 0;
+  z-index: -1;
 }
 
 #welcomeThing {
@@ -149,20 +149,6 @@ body {
   font-size: 15px;
 }
 
-/* #backBtn {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-  text-align: center;
-  align-content: center;
-  text-decoration: none;
-  font-family: sans-serif;
-  color: white;
-  border: 2px solid white;
-  width: 120px;
-  height: 30px;
-} */
 #backBtn {
   display: inline-block;
   margin-top: 20px;
@@ -179,4 +165,50 @@ body {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
+}
+#rightsBtn {
+  position: fixed;
+  bottom: 18%;
+  left: 2%;
+  border: 2px solid white;
+  padding: 12px;
+  background-color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+}
+#codesBtn {
+  position: fixed;
+  bottom: 10%;
+  left: 2%;
+  border: 2px solid white;
+  padding: 12px;
+  background-color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+}
+
+#codes {
+  display: flex;
+  flex-direction: row;
+}
+
+#scenes {
+  margin-left: 30px;
+}
+
+#radio {
+  margin-left: 30px;
+}
+#req {
+  margin-right: 30px;
 }

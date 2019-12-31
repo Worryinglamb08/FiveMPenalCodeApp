@@ -1,0 +1,34 @@
+{
+  "name": "maritime-penal-codes-app",
+  "productName": "Maritime Penal code App",
+  "version": "1.4.0",
+  "description": "Maritime, An app to find penal codes.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron main.js",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . maritime-penal-codes-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE darwinDarkModeSupport=true --version-string.FileDescription=CE --version-string.ProductName=\"Maritime Penal Code App\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dev-CasperTheGhost/MaritmePenalCodeApp.git"
+  },
+  "keywords": [
+    "Penal codes",
+    "Penal",
+    "codes"
+  ],
+  "author": "Casper Iversen",
+  "license": "ISC",
+  "dependencies": {
+    "fs-plus": "^3.1.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "electron": "^1.8.8",
+    "electron-packager": "^14.1.1",
+    "electron-winstaller": "^4.0.0"
+  }
+}
