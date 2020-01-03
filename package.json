@@ -1,7 +1,7 @@
 {
   "name": "maritime-penal-codes-app",
   "productName": "Maritime Penal code App",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "Maritime, An app to find penal codes.",
   "main": "main.js",
   "scripts": {
@@ -28,7 +28,8 @@
     "discord-rich-presence": "0.0.8",
     "discord-rpc": "^3.1.0",
     "fs-plus": "^3.1.1",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "electron-updater": "^4.2.0"
   },
   "devDependencies": {
     "electron": "^1.8.8",
