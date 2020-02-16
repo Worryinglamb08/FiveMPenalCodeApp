@@ -20,12 +20,7 @@ Awesome App using ElectronJS, HTML, CSS and JavaScript
 
 
 ## MacOS
-
-1. Go to releases tab and download the `InstagramUserFinder-1.2.0.dmg`.
-2. Run it, it'll prompt you to drag it into your applications folder.
-3. Go to your applications folder and run it from there.
-4. Optional: Ones you have the app open, you'll see the icon in your dock, right click > Options > Keep in Dock 
-5. All done!
+Coming Soon!
 
 
 #### Disclaimer
